@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  .balance {
+    h4 {
+      text-transform: uppercase;
+    }
+  }
+  .income-expense-container {
+    display: flex;
+    h4 {
+      text-transform: uppercase;
+    }
+    .red {
+      color: rgb(180, 10, 10);
+      font-weight: bold;
+    }
+    .green {
+      color: rgb(20, 93, 2);
+      font-weight: bold;
+    }
+  }
+  .list {
+    list-style: none;
+    .plus {
+      border-right: 4px solid rgb(20, 93, 2);
+      &:hover {
+        background: rgb(20, 93, 2);
+        color: white;
+      }
+    }
+    .minus {
+      border-right: 4px solid rgb(180, 10, 10);
+      &:hover {
+        background: rgb(180, 10, 10);
+        color: white;
+      }
+    }
+  }
+}
